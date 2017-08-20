@@ -14,85 +14,78 @@
 </head>
 <body>
 
-  <div class="flipbook-viewport" style="display:none;">
-      <div class="container">
-        <div class="flipbook">
-			  <div style="background:url(image/0.jpg) center top no-repeat;background-size:100%">
-			  </div>
-			  <div style="background:url(image/112504538.jpg) center top no-repeat;background-size:100%">
-			  </div>
-              <div style="background:url(image/1.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div style="background:url(image/2.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div style="background:url(image/112504530.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div id="fth" style="background:url(image/4.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div style="background:url(image/5.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div style="background:url(image/112504533.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div id="sevth" style="background:url(image/7.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div id="tenth" style="background:url(image/112504535.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div style="background:url(image/112504477.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div id="last" style="background:url(image/zuihou.jpg) center top no-repeat;background-size:100%">
-              </div>
-              <div id="nnn" style="background:url(image/fengdi3.jpg) center top no-repeat;background-size:100%">
-              </div>
-        </div>
-       </div>
-  </div>
-  <div id="end" style="display:none;width:100%;height:100%;background:url(image/fengdi3.jpg) center top no-repeat;background-size:100%">
-    <div id="btns">
-      <a style="margin-bottom:40px;" href="index.html" id="rewatch">再看一遍</a>
-      <button class="share_btn" style="margin-bottom:200px;"  data-title="再见，北京地铁2元的风景" data-url="" data-des="地铁终点站外，是遥远的风景；也是疲惫的人们，北京的家。" data-pic="image/minilogo.png">分享给好友</button>
-  </div>
-  </div>
+<div class="flipbook-viewport" style="display:none;">
+  <div class="container">
+    <div class="flipbook">
+      <div style="background:url(image/封面@2x.jpg) center top no-repeat;background-size:100%"></div>
+		  <div style="background:url(image/1@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/2@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/3@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/4@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/5@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/6@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/7@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/8@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/9@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/10@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/11@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/12@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/13@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/14@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/15@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/16@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/17@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/18@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/19@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/20@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/21@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/22@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/23@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/24@2x.jpg) center top no-repeat;background-size:100%"></div>
+      <div style="background:url(image/封底@2x.jpg) center top no-repeat;background-size:100%"></div>
+    </div>
+   </div>
+</div>
 
-
-  <script type="text/javascript">
-      $(function progressbar(){
-        var w = $(".graph").width();
-        $(".flipbook-viewport").show();
-      });
-      //屏蔽ios下上下弹性
-      $(window).on('scroll.elasticity', function (e) {
-          e.preventDefault();
-      }).on('touchmove.elasticity', function (e) {
-          e.preventDefault();
-      });
-      function loadApp() {
-          var w=$(window).width();
-          var h=$(window).height();
-          $('.flipboox').width(w).height(h);
-          $(window).resize(function(){
-              w=$(window).width();
-              h=$(window).height();
-              $('.flipboox').width(w).height(h);
-          });
-          $('.flipbook').turn({
-                  // Width
-                  width:w,
-                  // Height
-                  height:h,
-                  // Elevation
-                  elevation: 50,
-                  display :'single',
-                  // Enable gradients
-                  gradients: true,
-                  // Auto center this flipbook
-                  autoCenter: true
-          });
-      }
-      yepnope({
-          test : Modernizr.csstransforms,
-          yep: ['js/turn.js'],
-          complete: loadApp
-      });
+<script type="text/javascript">
+  $(function progressbar(){
+    var w = $(".graph").width();
+    $(".flipbook-viewport").show();
+  });
+  //屏蔽ios下上下弹性
+  $(window).on('scroll.elasticity', function (e) {
+    e.preventDefault();
+  }).on('touchmove.elasticity', function (e) {
+    e.preventDefault();
+  });
+  function loadApp() {
+    var w=$(window).width();
+    var h=$(window).height();
+    $('.flipboox').width(w).height(h);
+    $(window).resize(function(){
+        w=$(window).width();
+        h=$(window).height();
+        $('.flipboox').width(w).height(h);
+    });
+    $('.flipbook').turn({
+      // Width
+      width:w,
+      // Height
+      height:h,
+      // Elevation
+      elevation: 50,
+      display :'single',
+      // Enable gradients
+      gradients: true,
+      // Auto center this flipbook
+      autoCenter: true
+    });
+  }
+  yepnope({
+    test : Modernizr.csstransforms,
+    yep: ['js/turn.js'],
+    complete: loadApp
+  });
 </script>
 
 </body>
