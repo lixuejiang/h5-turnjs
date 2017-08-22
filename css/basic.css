@@ -19,7 +19,6 @@ body{
 }
 
 .flipbook-viewport .flipbook{
-	
 }
 
 .flipbook-viewport .page{
@@ -72,9 +71,6 @@ body{
 
 .pull-left {position:absolute;bottom:5%;right:0;overflow:hidden;width:240px; height:200px; }/*  |xGv00|e69d3d10a97baed58b34702fd0b01ff5 */
 
-body{
-    background:#dddddd url(../image/background.png) repeat;
-}
 .loadinner{
     position:absolute;
     width:76%;
